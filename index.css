@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Bemirs';
+    src: url('./BemirsDemoVersionRegular-L360Z.ttf') format('truetype');
+}
+
+body {
+    margin: 0px 100px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    margin: 50px 0px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.icon img {
+    height: 50px;
+}
+
+.sections ul {
+    display: flex;
+    justify-content:flex-start ;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.sections ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.search {
+    position: relative;
+    width: 150px;
+    height: 35px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.search-input {
+    border: none;
+    height: 80%;
+    width: 80%;
+    outline: none;
+    font-size: 20px;
+}
+
+.search-icon {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-icon:hover {
+    transform: scale(1.5);
+}
+
+.introduction {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.hero-line {
+    width: 50%;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-line p{
+    margin: 0;
+}
+
+.my-name {
+    font-weight: 600;
+    font-size: 48px;
+    font-family: 'Bemirs', sans-serif;
+    color: rgb(82, 71, 10);
+}
+
+.my-profile-pic {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-profile-pic img {
+    width: 50%;
+}
+
+.about{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 50px;
+}
+
+.about h1{
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-data{
+    display: flex;
+    position: relative;
+    gap:10px;
+}
+
+.about .line{
+    width: 10%;
+    height: 3px;
+    background-color: gold;
+    position: relative;
+    top:7px;
+}
+.about-words p{
+    margin: 0;
+    font-size: 20px;
+}
+
+.skills{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-bottom: 50px;
+}
+
+.skills h1{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.skill-container{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.skill-card{
+    width:100px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.skill-card p{
+    margin:0;
+}
+
+.skill-card img{
+    width: 100%;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio h1{
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.project-card-item {
+    background-color: lightgray;
+    text-align: center;
+    aspect-ratio: 1.5 / 1; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.project-card-item img{
+    width:100%;
+    object-fit:fill;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        margin: 0px 50px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .introduction {
+        flex-direction: column-reverse;
+    }
+
+    .hero-line {
+        width: 100%;
+    }
+
+    .my-profile-pic {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about .line{
+        width:200px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    body {
+        margin: 0px 15px;
+    }
+    .icon img{
+        display: none;
+    }
+    .navbar{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .my-profile-pic{
+        justify-content: center;
+    }
+    .hero-line{
+        font-size: 24px;
+    }
+    .hero-line .my-name{
+        font-size: 30px;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+
+@media screen and (max-width:960px) {
+    .my-profile-pic img{
+        width: 100%;
+    }
+}
