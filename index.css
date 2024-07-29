@@ -189,7 +189,8 @@ margin-bottom: 50px;
 .project-card-item {
     background-color: lightgray;
     text-align: center;
-    aspect-ratio: 1.5 / 1; 
+    aspect-ratio: 2.1 / 1; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -293,6 +294,7 @@ margin-bottom: 50px;
     .introduction {
         flex-direction: column-reverse;
     }
+
     
     .hero-line {
         width: 100%;
@@ -332,10 +334,6 @@ margin-bottom: 50px;
     .hero-line .my-name{
         font-size: 30px;
     }
-    .portfolio-container{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
     .skill-card{
         width: 50px;
         padding: 5px;
@@ -350,5 +348,9 @@ margin-bottom: 50px;
 @media screen and (max-width:960px) {
     .my-profile-pic img{
         width: 100%;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 }

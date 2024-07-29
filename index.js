@@ -26,13 +26,13 @@ skills.map(skill => {
 
 const projects=[
     {
-        id:1,name:"Ecommerce",link:"https://edwardoekka.github.io/Ecommerce_Ui/index.html",image:"https://blog-frontend.envato.com/cdn-cgi/image/width=2560,quality=75,format=auto/uploads/sites/2/2022/04/E-commerce-App-JPG-File-scaled.jpg"
+        id:1,name:"Ecommerce",link:"https://edwardoekka.github.io/Ecommerce_Ui/index.html",image:"./projects/wardo-store.png"
     },
     {
-        id:2,name:"Blog App",link:"https://wardesk.vercel.app/",image:"https://pressreleasenetwork.com/site/wp-content/uploads/2021/04/blogging.jpg"
+        id:2,name:"Blog App",link:"https://wardesk.vercel.app/",image:"./projects/wardesk.png"
     },
     {
-        id:3,name:"Social Media",link:"https://wardogram.vercel.app/",image:"https://plus.unsplash.com/premium_photo-1683583961441-511f9498e6ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        id:3,name:"Social Media",link:"https://wardogram.vercel.app/",image:"./projects/wardogram.png"
     }
 ]
 
