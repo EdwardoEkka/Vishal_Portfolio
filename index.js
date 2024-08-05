@@ -12,7 +12,7 @@ const skills = [
 const skillContainer = document.querySelector('.skill-container');
 skills.map(skill => {
     const skillDiv = document.createElement('div');
-    skillDiv.classList.add('skill-card');
+    skillDiv.classList.add('skill-card-item');
     const skillImg = document.createElement('img');
     skillImg.src = skill.path;
     skillImg.alt = skill.name;
