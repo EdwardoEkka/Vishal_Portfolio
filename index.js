@@ -26,13 +26,19 @@ skills.map(skill => {
 
 const projects=[
     {
-        id:1,name:"Ecommerce",link:"https://edwardoekka.github.io/Ecommerce_Ui/index.html",image:"./projects/wardo-store.png"
+        id:1,name:"Ecommerce",link:"https://edwardoekka.github.io/Ecommerce_Ui/index.html"
     },
     {
-        id:2,name:"Blog App",link:"https://wardesk.vercel.app/",image:"./projects/wardesk.png"
+        id:2,name:"Blog App",link:"https://wardesk.vercel.app/"
     },
     {
-        id:3,name:"Social Media",link:"https://wardogram.vercel.app/",image:"./projects/wardogram.png"
+        id:3,name:"Social Media",link:"https://wardogram.vercel.app/"
+    },
+    {
+        id:4,name:"Social Media",link:"https://wardogram.vercel.app/"
+    },
+    {
+        id:4,name:"Social Media",link:"https://wardogram.vercel.app/"
     }
 ]
 
@@ -49,4 +55,36 @@ projects.map(project => {
     projectDiv.appendChild(projectImg);
     // projectDiv.appendChild(projectName);
     portfolioContainer.appendChild(projectDiv);
+});
+
+const previous=document.querySelector('.prev');
+const next=document.querySelector('.next');
+
+
+const scrollAmountPercentage = 0.5; // 50% as a decimal
+
+next.addEventListener('click', () => {
+    let scrollAmount;
+    if (window.innerWidth < 600) {
+        scrollAmount = portfolioContainer.clientWidth; // 100% of the container's width
+    } else {
+        scrollAmount = portfolioContainer.clientWidth * scrollAmountPercentage; // 50% of the container's width
+    }
+    portfolioContainer.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
+});
+
+previous.addEventListener('click', () => {
+    let scrollAmount;
+    if (window.innerWidth < 600) {
+        scrollAmount = portfolioContainer.clientWidth; // 100% of the container's width
+    } else {
+        scrollAmount = portfolioContainer.clientWidth * scrollAmountPercentage; // 50% of the container's width
+    }
+    portfolioContainer.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
+    });
 });
