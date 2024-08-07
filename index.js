@@ -26,19 +26,19 @@ skills.map(skill => {
 
 const projects=[
     {
-        id:1,name:"Ecommerce",link:"https://edwardoekka.github.io/Ecommerce_Ui/index.html"
+        id:1,name:"Ecommerce",link:"https://edwardoekka.github.io/Ecommerce_Ui/index.html",image:"https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/08/Image_-_E-Commerce_Website_.jpeg.jpg"
     },
     {
-        id:2,name:"Blog App",link:"https://wardesk.vercel.app/"
+        id:2,name:"Blog App",link:"https://wardesk.vercel.app/",image:"https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/08/Image_-_E-Commerce_Website_.jpeg.jpg"
     },
     {
-        id:3,name:"Social Media",link:"https://wardogram.vercel.app/"
+        id:3,name:"Social Media",link:"https://wardogram.vercel.app/",image:"https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/08/Image_-_E-Commerce_Website_.jpeg.jpg"
     },
     {
-        id:4,name:"Social Media",link:"https://wardogram.vercel.app/"
+        id:4,name:"Social Media",link:"https://wardogram.vercel.app/",image:"https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/08/Image_-_E-Commerce_Website_.jpeg.jpg"
     },
     {
-        id:4,name:"Social Media",link:"https://wardogram.vercel.app/"
+        id:4,name:"Social Media",link:"https://wardogram.vercel.app/",image:"https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/08/Image_-_E-Commerce_Website_.jpeg.jpg"
     }
 ]
 
@@ -57,34 +57,3 @@ projects.map(project => {
     portfolioContainer.appendChild(projectDiv);
 });
 
-const previous=document.querySelector('.prev');
-const next=document.querySelector('.next');
-
-
-const scrollAmountPercentage = 0.5; // 50% as a decimal
-
-next.addEventListener('click', () => {
-    let scrollAmount;
-    if (window.innerWidth < 600) {
-        scrollAmount = portfolioContainer.clientWidth; // 100% of the container's width
-    } else {
-        scrollAmount = portfolioContainer.clientWidth * scrollAmountPercentage; // 50% of the container's width
-    }
-    portfolioContainer.scrollBy({
-        left: scrollAmount,
-        behavior: 'smooth'
-    });
-});
-
-previous.addEventListener('click', () => {
-    let scrollAmount;
-    if (window.innerWidth < 600) {
-        scrollAmount = portfolioContainer.clientWidth; // 100% of the container's width
-    } else {
-        scrollAmount = portfolioContainer.clientWidth * scrollAmountPercentage; // 50% of the container's width
-    }
-    portfolioContainer.scrollBy({
-        left: -scrollAmount,
-        behavior: 'smooth'
-    });
-});
