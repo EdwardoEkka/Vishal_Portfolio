@@ -287,6 +287,8 @@ body {
   }
   
   .project-card-item {
+    position: relative;
+    font-family: 'kayak',sans-serif;
     background-color: lightgray;
     width: 100%;
     aspect-ratio: 1.5 / 1;
@@ -298,11 +300,71 @@ body {
     border-radius: 12px;
 }
 
+.project-name{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 888;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .project-card-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
+}
+
+.layer{
+    
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 777;
+    border-radius: 12px;
+}
+
+.project-details h5{
+    padding: 20px;
+}
+
+.project-details{
+    display: none;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: hsl(232, 53%, 25%);
+}
+
+.project-card-item:hover .project-details {
+    display: flex; 
+}
+
+.link-button{
+    border: 2px solid rgb(110, 7, 243);
+    outline: none;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+.link-button:hover{
+    background-color: rgb(110, 7, 243);
 }
 
 .contact-me {
@@ -434,7 +496,6 @@ body {
         gap: 20px;
         align-items: center;
     }
-
     .my-profile-pic {
         width: 100%;
         display: flex;
@@ -490,7 +551,9 @@ body {
     }
     .navbar{
         justify-content: center;
-        margin:10px 20px 0px 0px;
+    }
+    .sections{
+        width: 90%;
     }
     .sections ul{
         width: 100%;
