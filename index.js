@@ -92,3 +92,20 @@ const skills = [
         projectDiv.appendChild(projectDetails);
         portfolioContainer.appendChild(projectDiv);
     });
+
+
+
+function updateImageSource() {
+    const picture = document.querySelector('.my-profile');
+    if (window.innerWidth < 600) {
+      picture.src = 'my_half_pic.jpeg'; 
+    } else {
+      picture.src = 'mypic.jpeg';  
+    }
+  }
+  
+
+  updateImageSource();
+  
+  window.addEventListener('resize', updateImageSource);
+  

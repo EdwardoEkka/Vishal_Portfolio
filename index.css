@@ -32,7 +32,7 @@ body {
     color: #030204;
 }
 
-.nav-intro{
+.nav{
     width: 100%;
     display: flex;
     align-items: center;
@@ -40,7 +40,23 @@ body {
     justify-content: center;
 }
 
-.nav-intro-main{
+.nav-main{
+    max-width: 1024px; 
+    height: 100%;
+    width: 100%;   
+    padding: 20px 24px;
+    box-sizing: border-box;
+}
+
+.intro{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-main{
     max-width: 1024px; 
     height: 100%;
     width: 100%;   
@@ -51,7 +67,6 @@ body {
 .navbar {
     width: 100%;
     display: flex;
-    margin: 50px 0px;
     justify-content: space-between;
     align-items: center;
     font-family: 'titty',sans-serif;
@@ -75,37 +90,6 @@ body {
     font-size: 20px;
 }
 
-.search {
-    position: relative;
-    width: 150px;
-    height: 35px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    border: 1px solid #030204;
-    padding: 5px;
-}
-
-.search-input {
-    border: none;
-    height: 80%;
-    width: 80%;
-    outline: none;
-    font-size: 20px;
-    background-color: transparent;
-    font-family: 'kayak', sans-serif;
-}
-
-.search-icon {
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.search-icon:hover {
-    transform: scale(1.5);
-}
 
 
 .introduction {
@@ -117,7 +101,6 @@ body {
 
 .intro-flex {
     display: flex;
-    margin-bottom: 50px;
     gap: 10px;
 }
 
@@ -432,7 +415,7 @@ body {
 }
 
 .contact-grid-item {
-    background-color: rgb(45, 44, 44);
+    background-color: rgb(92, 85, 85);
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -519,6 +502,7 @@ body {
     }
 
 
+
     .hero-line{
         width: 100%;
         display: flex;
@@ -531,9 +515,6 @@ body {
         width: 90%;
     }
 
-    .search{
-        display: none;
-    }
     .project-card-item{
         min-width: 100%;
     }
@@ -543,8 +524,6 @@ body {
 }
 
 
-@media screen and (max-width:1024px) {
-}
 
 @media screen and (max-width:450px){
     .skill-container{
@@ -557,12 +536,12 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
     .icon{
         display: none;
     }
     .navbar{
         justify-content: center;
-        margin: 10px;
     }
     .sections{
         width: 90%;
@@ -586,5 +565,20 @@ body {
     }
     .full-stack{
         font-size: 24px;
+    }
+}
+
+
+@media screen and (max-height:500px){
+    .intro-main{
+        padding: 0px 0px 24px;
+    }
+
+    .nav-main{
+        padding: 10px 24px 0px;
+    }
+
+    .intro-flex{
+        gap: 10px;
     }
 }

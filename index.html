@@ -10,8 +10,8 @@
 
 <body>
     <div class="main-body">
-        <section class="nav-intro">
-            <div class="nav-intro-main">
+        <section class="nav">
+            <div class="nav-main">
                 <nav class="navbar">
                     <div class="icon">
                         <img src="./icon.png" alt="icon">
@@ -23,13 +23,11 @@
                             <li>Contact</li>
                         </ul>
                     </div>
-                    <div class="search">
-                        <input class="search-input" placeholder="search" />
-                        <div class="search-icon">
-                            &#128269;
-                        </div>
-                    </div>
                 </nav>
+            </div>
+        </section>
+        <section class="intro">
+            <div class="intro-main">
                 <section class="introduction">
                     <div class="intro-flex">
                         <div class="hero-line">
@@ -41,12 +39,20 @@
                             </div>
                         </div>
                         <div class="my-profile-pic">
-                            <img src="mypic.jpeg" alt="my-pic" class="my-profile"/>
+                            <img src="" alt="my-pic" class="my-profile"/>
                         </div>
                     </div>
                 </section>
             </div>
         </section>
+        <lottie-player 
+        src="./computer.json" 
+        background="transparent" 
+        speed="1" 
+        class="computer"
+        loop 
+        autoplay>
+    </lottie-player>
         <section class="about">
             <div class="about-main">
                 <h1>About</h1>
@@ -109,8 +115,12 @@
                 </div>
             </div>
         </section>
+       
+
+ 
     </div>
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 
 </html>
