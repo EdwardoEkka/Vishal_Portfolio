@@ -20,6 +20,11 @@
     src: url('./Tenre\ Modern.ttf') format('opentype');
 }
 
+@font-face {
+    font-family: 'titty';
+    src: url('./TitilliumWeb-Regular.ttf') format('opentype');
+}
+
 
 body {
     margin: 0px;
@@ -37,6 +42,7 @@ body {
 
 .nav-intro-main{
     max-width: 1024px; 
+    height: 100%;
     width: 100%;   
     padding: 20px 24px;
     box-sizing: border-box;
@@ -48,7 +54,8 @@ body {
     margin: 50px 0px;
     justify-content: space-between;
     align-items: center;
-    font-family: 'kayak',sans-serif;
+    font-family: 'titty',sans-serif;
+    font-weight: 800;
 }
 
 
@@ -59,7 +66,7 @@ body {
 .sections ul {
     display: flex;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 50px;
     padding-left: 0;
 }
 
@@ -195,6 +202,7 @@ body {
 .about-words p {
     margin: 0;
     font-size: 20px;
+    color: white;
 }
 
 .skills {
@@ -484,6 +492,9 @@ body {
     .full-stack{
         font-size: 30px;
     }
+    .sections ul{
+        gap: 30px;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -505,8 +516,8 @@ body {
 
     .my-profile-pic img{
         width: 50%;
-        height: 50%;
     }
+
 
     .hero-line{
         width: 100%;
@@ -551,6 +562,7 @@ body {
     }
     .navbar{
         justify-content: center;
+        margin: 10px;
     }
     .sections{
         width: 90%;
