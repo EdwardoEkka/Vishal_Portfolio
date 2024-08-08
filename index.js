@@ -109,3 +109,17 @@ function updateImageSource() {
   
   window.addEventListener('resize', updateImageSource);
   
+  function updateLottieSource() {
+    const Lottie = document.querySelector('.my-background');
+    if (window.innerWidth < 600) {
+      Lottie.src = './green.json'; 
+    } else {
+      Lottie.src = './lotti_back.json';  
+    }
+  }
+  
+
+  updateLottieSource();
+  
+  window.addEventListener('resize', updateLottieSource);
+  
