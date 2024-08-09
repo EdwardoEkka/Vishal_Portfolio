@@ -50,17 +50,22 @@ body {
 }
 
 .intro{
-    overflow: hidden;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    overflow: hidden;
     position: relative;
-    padding: 24px;
 }
 
-
+#canvas {
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    background-color:  #78ffd1;
+}
 
 .intro-main{
     z-index: 999;
@@ -69,7 +74,6 @@ body {
     width: 100%;   
     padding: 20px 24px;
     box-sizing: border-box;
-
 }
 
 .navbar {
@@ -105,6 +109,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family:sans-serif;
 }
 
 .intro-flex {
@@ -423,7 +428,7 @@ body {
 }
 
 .contact-grid-item {
-    background-color: rgb(92, 85, 85);
+    background-color: grey;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -486,6 +491,7 @@ body {
     .sections ul{
         gap: 30px;
     }
+    
 }
 
 @media screen and (max-width:600px){
