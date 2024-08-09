@@ -64,7 +64,7 @@ body {
     top: 0;
     left: 0;
     opacity: 0.8;
-    background-color:  #78ffd1;
+    background-color: #FFFFFA;
 }
 
 .intro-main{
@@ -134,7 +134,7 @@ body {
     font-weight: 600;
     font-size: 48px;
     font-family: 'One Day', sans-serif;
-    color: #dba40f;
+    color: black;
     word-wrap: unset;
 }
 
