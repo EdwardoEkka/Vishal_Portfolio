@@ -23,6 +23,11 @@
     src: url('./TitilliumWeb-Regular.ttf') format('opentype');
 }
 
+@font-face {
+    font-family: 'wallop';
+    src: url('./Wallop-Regular.otf') format('opentype');
+}
+
 
 
 body {
@@ -54,7 +59,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.2);
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.3);
 
 }
 
@@ -235,7 +240,7 @@ body {
     font-family: 'kayak', sans-serif;
     padding: 10px;
     background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.3);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
@@ -244,6 +249,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: scale 0.3s ease-in-out;
+
+}
+
+.skill-card-item:hover{
+    scale: 1.1;
 }
 
 .skill-card p {
