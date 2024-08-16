@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'kayak';
-    src: url('./Kayak\ Sans\ Light.otf') format('opentype');
+    src: url('./Kayak\ Sans\ Light.otf') format('truetype');
 }
 
 @font-face {
@@ -14,13 +14,8 @@
 }
 
 @font-face {
-    font-family: 'tenre';
-    src: url('./Tenre\ Modern.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'titty';
-    src: url('./TitilliumWeb-Regular.ttf') format('opentype');
+    src: url('./TitilliumWeb-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -28,12 +23,16 @@
     src: url('./LeagueSpartan-Bold.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'montserrat';
+    src: url('./Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
 
 
 body {
     margin: 0px;
     background-color: #FFFFFA;
-    color: #030204;
 }
 
 .nav {
@@ -45,7 +44,7 @@ body {
 }
 
 .nav-main {
-    max-width: 1024px;
+    max-width: 1296px;
     height: 100%;
     width: 100%;
     padding: 20px 24px;
@@ -63,18 +62,12 @@ body {
 
 }
 
-.sidebar{
-    width: 100px;
-    height: 100%;
-    background-color: #f39c12;
-    position: absolute;
-    left: 0;
-    top:0;
-}
+
+
 
 .intro-main {
     z-index: 999;
-    max-width: 1024px;
+    max-width: 1296px;
     height: 100%;
     width: 100%;
     padding: 20px 24px;
@@ -145,14 +138,34 @@ body {
   -webkit-text-stroke: 2px black; 
 }
 
+
+
 .full-stack {
-font-size: 56px;
+    font-size: 56px;
 font-family: 'league', sans-serif;
-word-wrap: unset;
+    font-weight: bold;
+    background: linear-gradient(to right, #6E07F3, #4B0082, #6E07F3);
+    background-size: 200% auto;
+    color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: flowing-water 3s linear infinite;
+}
+
+@keyframes flowing-water {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -200% 0%;
+    }
 }
 
 .greet{
     font-family: 'azonix', sans-serif;
+    color: #6E07F3;
 }
 
 .my-profile-pic {
@@ -172,35 +185,53 @@ word-wrap: unset;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: red;
+    background-color: #6E07F3;
     padding: 20px 0px;
     height: 400px;
 }
 
 .about-main {
-    max-width: 1024px;
+    max-width: 960px;
     width: 100%;
     padding: 20px 24px;
     box-sizing: border-box;
+    text-align: center;
 }
 
-.about p {
+.about-words  {
     font-family: 'kayak', sans-serif;
-
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
 }
 
 .about h1 {
     margin: 0;
     font-size: 36px;
     margin-bottom: 20px;
-    font-family: 'tenre', sans-serif;
+    font-family: sans-serif;
     color: #f39c12;
 }
 
 .coder {
     font-family: 'azonix', sans-serif;
-    color: #1F00DA;
+    font-weight: 400;
+    display: inline-block;
+    animation: enlargeScale 2s ease-in-out infinite;
 }
+
+@keyframes enlargeScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 .about-data {
     display: flex;
@@ -214,6 +245,20 @@ word-wrap: unset;
     font-size: 20px;
     color: white;
 }
+
+
+.skill-set{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.skill-menu{
+    display: flex;
+    font-size: 20px;
+    gap:20px;
+    font-family: 'kayak', sans-serif;
+}
+
 
 .skills {
     width: 100%;
@@ -239,16 +284,36 @@ word-wrap: unset;
     text-align: center;
     font-size: 36px;
     margin-bottom: 20px;
-    font-family: 'tenre', sans-serif;
+    font-family: sans-serif;
     color: #f39c12;
 }
 
-.skill-container {
+.frontend-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
     justify-content: center;
+}
+
+.others-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.backend-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.frontend ,.backend, .others{
+    cursor: pointer;
 }
 
 .skill-card-item {
@@ -290,7 +355,7 @@ word-wrap: unset;
 }
 
 .portfolio-main {
-    max-width: 1024px;
+    max-width: 1296px;
     width: 100%;
     padding: 20px 24px;
     box-sizing: border-box;
@@ -300,7 +365,7 @@ word-wrap: unset;
     margin: 0;
     font-size: 36px;
     margin-bottom: 20px;
-    font-family: 'tenre', sans-serif;
+    font-family: sans-serif;
     color: #f39c12;
 }
 
@@ -316,7 +381,7 @@ word-wrap: unset;
 
 .project-card-item {
     position: relative;
-    font-family: 'kayak', sans-serif;
+    font-family: 'montserrat', sans-serif;
     background-color: lightgray;
     width: 100%;
     aspect-ratio: 1.5 / 1;
@@ -375,7 +440,11 @@ word-wrap: unset;
     justify-content: center;
     flex-direction: column;
     color: white;
+    font-size: 16px;
+    font-weight: 200;
     background-color: hsl(232, 53%, 25%);
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .project-card-item:hover .project-details {
@@ -401,11 +470,11 @@ word-wrap: unset;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: red;
+    background-color: #6E07F3;
 }
 
 .contact-me-main {
-    max-width: 1024px;
+    max-width: 1296px;
     width: 100%;
     padding: 20px 24px;
     box-sizing: border-box;
@@ -417,7 +486,7 @@ word-wrap: unset;
     font-size: 36px;
     margin-left: 10px;
     margin-right: 10px;
-    font-family: 'tenre', sans-serif;
+    font-family: sans-serif;
     color: #f39c12;
 }
 
@@ -488,10 +557,15 @@ word-wrap: unset;
 }
 
 
+@media screen and (max-width:1296px) {
 
-@media screen and (max-width:1024px) {
-
-    .skill-container {
+    .frontend-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .backend-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .others-container {
         grid-template-columns: repeat(5, 1fr);
     }
 }
@@ -503,16 +577,14 @@ word-wrap: unset;
 }
 
 @media screen and (max-width:768px) {
-    /* .my-profile-pic img {
-        width: 80%;
-    } */
+
 
     .my-name {
-        font-size: 40px;
+        font-size: 48px;
     }
 
     .full-stack {
-        font-size: 30px;
+        font-size: 48px;
     }
 
     .sections ul {
@@ -522,8 +594,15 @@ word-wrap: unset;
 }
 
 @media screen and (max-width:600px) {
-    .skill-container {
+    .frontend-container {
         grid-template-columns: repeat(4, 1fr);
+    }
+    .backend-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .about-words {
+        font-size:20px;
     }
 
     .intro-flex {
@@ -573,7 +652,14 @@ word-wrap: unset;
         padding: 0px;
     }
 
-    .skill-container {
+    .frontend-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .backend-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .others-container {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -597,14 +683,19 @@ word-wrap: unset;
         width: 90%;
     }
 
+    .nav-main{
+        padding: 10px 20px;
+    }
+
     .sections ul {
         width: 100%;
         justify-content: space-between;
     }
 
-    .about-words p {
-        font-size: 16px;
+    .about-words {
+        font-size:16px;
     }
+
 
     .contact-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -614,14 +705,23 @@ word-wrap: unset;
         font-size: 30px;
     }
 
+    .greet{
+        font-size: 23px;
+    }
+
     .my-name {
-        font-size: 36px;
+        font-size: 38px;
+        -webkit-text-stroke: 1.5px black; 
     }
 
     .full-stack {
-        font-size: 24px;
+        font-size: 21px;
     }
 }
 
-
+@media screen and (max-width:600px) and (min-width:450px){
+    .full-stack{
+        font-size: 30px;
+    }
+}
 
