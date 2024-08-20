@@ -72,9 +72,10 @@ other_skills.map((skill) => {
   OtherskillContainer.appendChild(skillDiv);
 });
 
-const Frontend = document.querySelector(".frontend");
-const Backend = document.querySelector(".backend");
-const Others = document.querySelector(".others");
+const Frontend = document.getElementById("frontend");
+Frontend.classList='selected';
+const Backend = document.getElementById("backend");
+const Others = document.getElementById("others");
 
 function RenderSkill(k) {
   switch (k) {
@@ -82,16 +83,25 @@ function RenderSkill(k) {
       FrontendskillContainer.style.display = "grid";
       BackendskillContainer.style.display = "none";
       OtherskillContainer.style.display = "none";
+      Frontend.classList='selected';
+      Backend.classList='none';
+      Others.classList='none';
       break;
     case "b":
       FrontendskillContainer.style.display = "none";
       BackendskillContainer.style.display = "grid";
       OtherskillContainer.style.display = "none";
+      Frontend.classList='none';
+      Backend.classList='selected';
+      Others.classList='none';
       break;
     case "o":
       FrontendskillContainer.style.display = "none";
       BackendskillContainer.style.display = "none";
       OtherskillContainer.style.display = "grid";
+      Frontend.classList='none';
+      Backend.classList='none';
+      Others.classList='selected';
       break;
     default:
       break;
@@ -143,7 +153,7 @@ const projects = [
   },
 ];
 
-const portfolioContainer = document.querySelector(".portfolio-container");
+const projectContainer = document.querySelector(".project-container");
 projects.map((project) => {
   const projectDiv = document.createElement("div");
   projectDiv.classList.add("project-card-item");
@@ -180,7 +190,7 @@ projects.map((project) => {
   projectDetails.appendChild(Link);
   projectDiv.appendChild(projectImg);
   projectDiv.appendChild(projectDetails);
-  portfolioContainer.appendChild(projectDiv);
+  projectContainer.appendChild(projectDiv);
 });
 
 function updateImageSource() {
