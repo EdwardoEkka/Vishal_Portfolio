@@ -205,3 +205,20 @@ function updateImageSource() {
 updateImageSource();
 
 window.addEventListener("resize", updateImageSource);
+
+const aboutLink = document.querySelector('.about-link');
+const projectLink = document.querySelector('.project-link');
+const contactLink = document.querySelector('.contact-link');
+
+const aboutView = document.querySelector('.about-view');
+const projectView = document.querySelector('.project-view');
+const contactView = document.querySelector('.contact-view');
+
+function scrollToView(view) {
+  view.scrollIntoView({ behavior: 'smooth' });
+}
+
+
+aboutLink.addEventListener('click', () => scrollToView(aboutView));
+projectLink.addEventListener('click', () => scrollToView(projectView));
+contactLink.addEventListener('click', () => scrollToView(contactView));
