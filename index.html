@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./project.css">
 </head>
 
 <body>
@@ -13,16 +14,16 @@
         <section class="nav">
             <div class="nav-main">
                 <nav class="navbar">
-                    <div class="icon">
-                        <img src="./icon.png" alt="icon">
-                    </div>
+                    <img src="./icon.png" alt="name" class="name-icon"/>
                     <div class="sections">
                         <ul>
                             <li class="about-link">About</li>
+                            <li class="skill-link">Skills</li>
                             <li class="project-link">Projects</li>
                             <li class="contact-link">Contact</li>
                         </ul>
                     </div>
+                    <img src="./ham.svg" alt="ham" class="hamburger-icon"/>
                 </nav>
             </div>
         </section>
@@ -36,23 +37,24 @@
                                 <p class="my-name">Vishal Ekka</p>
                                 <p class="full-stack">Fullstack Developer.</p>
                                 <p class="coder">
-                                    < CODER>
+                                    < CODER />
                                 </p>
                             </div>
                         </div>
-                        <div class="my-profile-pic">
+                        <!-- <div class="my-profile-pic">
                             <img src="" alt="my-pic" class="my-profile" />
-                        </div>
+                        </div> -->
                     </div>
                 </section>
             </div>
         </section>
-        <lottie-player src="./computer.json" background="transparent" speed="1" class="computer" loop autoplay>
-        </lottie-player>
         <section class="about">
             <div class="about-view" id="about-view"></div>
             <div class="about-main">
-                <h1>About</h1>
+                <!-- <h1>About</h1> -->
+                <div class="v-pic">
+                    <img src="./my-photo.jpeg" alt="pic" class="my-pic"/>
+                </div>
                 <div class="about-data">
                     <!-- <div class="line"></div> -->
                     <div class="about-words">
@@ -79,6 +81,33 @@
                 </div>
                 <div class="backend-container"></div>
                 <div class="others-container"></div>
+            </div>
+        </section>
+        <section class="timeline">
+            <div class="timeline-main">
+                <div class="timelines">
+                    <h1>Work Experience</h1>
+                    <div class="timeline-1">
+                        <div class="inner-timeline-1">
+                            <div class="time-img">
+                                <div class="months time">
+                                    <h2 class="company-desc-up">TRIPOWA | Frontend Developer</h2>
+                                    <p>Sep–Nov '24</p>
+                                </div>
+                                <img src="./tripowa.png" alt="tripowa-logo"/>
+                            </div>
+                            <div class="time-desc">
+                                <h2 class="company-desc">TRIPOWA | Frontend Developer</h2>
+                                <ul>
+                                    <li>Developed dynamic and responsive UI components using Next.js and Tailwind CSS.</li>
+                                    <li>Optimized state management and data flow with Redux Toolkit for better performance.</li>
+                                    <li>Implemented smooth animations and interactive UI effects using Framer Motion.</li>
+                                    <li>Built reusable and scalable component structures for maintainable code.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="project">
@@ -147,6 +176,7 @@
     </div>
 
     <script src="./index.js"></script>
+    <script src="./project.js"></script>
     <script src="./particles.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

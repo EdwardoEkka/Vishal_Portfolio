@@ -1,0 +1,120 @@
+.project {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .project-main {
+    max-width: 1296px;
+    width: 100%;
+    padding: 20px 24px;
+    box-sizing: border-box;
+  }
+
+  .project-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:16px;
+  }
+  
+  .project-main h1 {
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "league", sans-serif;
+    color: black;
+  }
+  
+  .main-pro-div {
+    font-family: 'kayak', sans-serif;
+    font-weight: 400;
+    font-size:20px;
+  }
+  
+  .left-json-div {
+    flex: 1;
+    border-radius: 4px;
+    padding: 0px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: linear-gradient(to right, #5505B9, #6E07F3);
+    color: white;
+  }
+
+  .project-name{
+    display: flex;
+    align-items: center;
+    padding: 16px 0px;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    position: relative;
+  }
+
+  .project-name h2{
+    margin: 0;
+  }
+
+  .three-dots{
+    width:60px;
+    position: absolute;
+    left: 16px;
+  }
+  
+  .json-data-div{
+    padding: 16px;
+  }
+
+  .json-data-div p{
+    margin: 4px 0px;
+  }
+
+  .middle-div{
+    padding-left: 16px;
+  }
+
+  .p-name{
+    color: #FCD34D;
+  }
+
+  .p-desc{
+    color: greenyellow;
+  }
+
+  .tools-comma{
+    color: black;
+  }
+
+  .tool-name{
+    color:#FCD34D;
+  }
+  
+  .constSpan{
+    color: #EC4899;
+  }
+
+  .p-link{
+    color: #E0E0E0;;
+    text-decoration: none;
+    font-weight:500;
+  }
+
+  
+
+  @media screen and (max-width:768px) {
+    .project-container{
+        grid-template-columns: repeat(1,1fr);
+      }
+  }
+
+  @media screen and (max-width:450px){
+    .three-dots{
+        position: static;
+    }
+    .project-name{
+        justify-content: space-between;
+        padding: 16px 16px;
+    }
+  }
