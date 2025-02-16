@@ -7,47 +7,74 @@
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./project.css">
+    <link rel="stylesheet" href="./mobile-nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
+    <div class="circle">
+    </div>
+    <div class="mobile-nav">
+        <div class="nav-header">
+            <img src="./close.svg" alt="close-button" class="close-btn"/>
+        </div>
+        <ul class="nav-list">
+            <li class="about-link">About</li>
+            <li class="skill-link">Skills</li>
+            <li class="project-link">Projects</li>
+            <li class="contact-link">Contact</li>
+        </ul>
+    </div>
     <div class="main-body">
-        <section class="nav">
-            <div class="nav-main">
-                <nav class="navbar">
-                    <img src="./icon.png" alt="name" class="name-icon"/>
-                    <div class="sections">
-                        <ul>
-                            <li class="about-link">About</li>
-                            <li class="skill-link">Skills</li>
-                            <li class="project-link">Projects</li>
-                            <li class="contact-link">Contact</li>
-                        </ul>
-                    </div>
-                    <img src="./ham.svg" alt="ham" class="hamburger-icon"/>
-                </nav>
-            </div>
-        </section>
-        <section class="intro">
-            <div class="intro-main">
-                <section class="introduction">
-                    <div class="intro-flex">
-                        <div class="hero-line">
-                            <div class="content">
-                                <p class="greet">Hey This is!</p>
-                                <p class="my-name">Vishal Ekka</p>
-                                <p class="full-stack">Fullstack Developer.</p>
-                                <p class="coder">
-                                    < CODER />
-                                </p>
-                            </div>
+  
+            <section class="nav">
+                <div class="nav-main">
+                    <nav class="navbar">
+                        <img src="./icon.png" alt="name" class="name-icon"/>
+                        <div class="sections">
+                            <ul>
+                                <li class="about-link">About</li>
+                                <li class="skill-link">Skills</li>
+                                <li class="project-link">Projects</li>
+                                <li class="contact-link">Contact</li>
+                            </ul>
                         </div>
-                        <!-- <div class="my-profile-pic">
-                            <img src="" alt="my-pic" class="my-profile" />
-                        </div> -->
-                    </div>
-                </section>
-            </div>
-        </section>
+                        <img src="./ham.svg" alt="ham" class="hamburger-icon"/>
+                    </nav>
+                </div>
+            </section>
+            <section class="intro">
+                <div class="intro-main">
+                    <section class="introduction">
+                        <div class="intro-flex">
+                            <div class="hero-line">
+                                <div class="content">
+                                    <p class="greet">Hey This is!</p>
+                                    <p class="my-name">Vishal Ekka</p>
+                                    <p class="full-stack">Fullstack Developer.</p>
+                                    <p class="coder">
+                                        < CODER />
+                                    </p>
+                                    <div class="res-con">
+                                        <button class="butt-res-con">
+                                            CONTACT ME  <i class="fa-solid fa-envelope"></i>
+                                        </button>
+                                        <button class="butt-res-con">
+                                            GET RESUME  <i class="fa-solid fa-file"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="my-profile-pic">
+                                <img src="" alt="my-pic" class="my-profile" />
+                            </div> -->
+                        </div>
+                    </section>
+                </div>
+            </section>
+         
+   
+        </div>
         <section class="about">
             <div class="about-view" id="about-view"></div>
             <div class="about-main">
@@ -65,22 +92,26 @@
                         deliver innovative solutions in the ever-evolving world of software development.
                     </div>
                 </div>
-                <div class="space"></div>
             </div>
         </section>
         <section class="skills">
-            <div class="skills-main">
-                <div class="skill-set">
-                    <div class="skill-menu">
-                        <p id="frontend">Frontend</p>
-                        <p id="backend">Backend</p>
-                        <p id="others">Others</p>
+            <div class="skills-con">
+                <div class="skill-title">
+                    <h1>Skills</h1>
+                </div>
+                
+                <div class="skills-main">
+                    <div class="skill-set">
+                        <div class="skill-menu">
+                            <p id="frontend">Frontend</p>
+                            <p id="backend">Backend</p>
+                            <p id="others">Others</p>
+                        </div>
                     </div>
+                    <div class="frontend-container"></div>
+                    <div class="backend-container"></div>
+                    <div class="others-container"></div>
                 </div>
-                <div class="frontend-container">
-                </div>
-                <div class="backend-container"></div>
-                <div class="others-container"></div>
             </div>
         </section>
         <section class="timeline">
@@ -177,6 +208,7 @@
 
     <script src="./index.js"></script>
     <script src="./project.js"></script>
+    <script src="./mobile-nav.js"></script>
     <script src="./particles.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

@@ -32,16 +32,30 @@ html {
     scroll-behavior: smooth;
 }
 
+.circle{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color:  #6096b1;
+    top:-200px;
+    left:-200px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
 body {
     margin: 0px;
-    background-color: #FFFFFA;
+    background-color: rgb(195, 216, 216);
 }
+
+
 
 .nav {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    z-index: 1;
 }
 
 .nav-main {
@@ -57,6 +71,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    z-index: 1;
     overflow: hidden;
     position: relative;
     margin: 16px 0px;
@@ -72,7 +87,7 @@ body {
     width: 100%;
     padding: 20px 24px;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 12px;
 }
 
@@ -182,8 +197,8 @@ body {
     margin-bottom: 16px;
     align-items: center;
     border-radius: 50%;
-    padding: 8px;
-    border: 2px solid black;
+    padding: 4px;
+    border: 4px solid greenyellow;
 }
 
 .my-pic {
@@ -220,15 +235,41 @@ body {
 }
 
 .about {
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #6E07F3;
     padding: 20px 0px;
+    margin: 32px 0px;
+}
+
+.res-con{
+    display: flex;
+    gap:32px;
+    margin:16px 0px;
+    justify-content: center;
+}
+
+.butt-res-con{
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    padding: 16px 20px;
+    border-radius: 16px; 
+    cursor: pointer;
+    border: 4px solid transparent;
+    background: linear-gradient(45deg, #6a11cb, #2575fc) border-box; 
+    mask: 
+      linear-gradient(#000 0 0) padding-box, 
+      linear-gradient(#000 0 0);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .about-main {
+    z-index: 1;
     max-width: 960px;
     width: 100%;
     padding: 20px 24px;
@@ -290,10 +331,6 @@ body {
     color: white;
 }
 
-.space {
-    height: 200px;
-    width: 100%;
-}
 
 .selected {
     background-color: #4169E1;
@@ -303,19 +340,21 @@ body {
 
 
 .skill-set {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-bottom: 20px;
 }
 
 .skill-menu {
     display: flex;
     font-size: 20px;
-    gap: 20px;
+    gap: 16px;
     font-family: 'kayak', sans-serif;
 }
 
+.skill-menu p{
+    margin: 0;
+}
 
 .skills {
     width: 100%;
@@ -324,49 +363,53 @@ body {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    top: -150px;
+    margin: 32px 0px;
 }
 
-.skills-main {
-    max-width: 768px;
-    border: 2px solid black;
+.skills h1{
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+.skills-con{
+    max-width: 1296px;
     width: 100%;
     padding: 20px 24px;
     box-sizing: border-box;
-    background-color: #FFFFFA;
+    gap:16px;
+}
+
+
+
+.skills-main {
+    width: 100%;
+    box-sizing: border-box;
     border-radius: 20px;
 }
 
-.skills h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-family: sans-serif;
-    color: black;
-}
+
 
 .frontend-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    width: 100%; 
     gap: 20px;
-    justify-content: center;
+    justify-content: start;
+    flex-wrap: wrap;
 }
 
 .others-container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
-    justify-content: center;
+    justify-content: start;
+    flex-wrap: wrap;
 }
 
 .backend-container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
-    justify-content: center;
+    justify-content: start;
+    flex-wrap: wrap;
 }
 
 #frontend,
@@ -381,30 +424,24 @@ body {
 
 .skill-card-item {
     font-family: 'kayak', sans-serif;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.3);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
-    flex-direction: column;
+    background: rgba(255, 255, 255, 0.25);
+    border: 2px solid #d3d3d3;
+    gap: 8px;
     align-items: center;
     justify-content: center;
-    transition: scale 0.3s ease-in-out;
+    padding: 0px 8px;
+    border-radius: 12px;
+    flex-grow: 1;
 }
 
-.skill-card-item:hover {
-    scale: 1.1;
-}
 
 .skill-card p {
     margin: 0;
 }
 
 .skill-card-item img {
-    width: 60%;
+    height: 30px;
 }
 
 
@@ -445,6 +482,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.skill-title p{
+    font-family: 'kayak', sans-serif;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .imp-links ul li {
@@ -549,6 +592,7 @@ body {
 .hamburger-icon{
     width: 50px;
     display: none;
+    cursor: pointer;
 }
 
 .name-icon{
@@ -562,6 +606,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin: 32px 0px;
 }
 
 .timeline-main{
@@ -623,21 +668,14 @@ body {
 }
 
 
+@media screen and (max-width:500px)
+{
 
-
-@media screen and (max-width:1296px) {
-
-    .frontend-container {
-        grid-template-columns: repeat(5, 1fr);
+    .res-con{
+        gap:16px;
+        flex-direction: column;
     }
 
-    .backend-container {
-        grid-template-columns: repeat(5, 1fr);
-    }
-
-    .others-container {
-        grid-template-columns: repeat(5, 1fr);
-    }
 }
 
 
@@ -698,18 +736,6 @@ body {
 }
 
 @media screen and (max-width:600px) {
-    .frontend-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .backend-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .others-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
     .about-words {
         font-size: 20px;
     }
@@ -757,30 +783,15 @@ body {
         padding: 0px;
     }
 
-    .frontend-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .backend-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .others-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .skill-card-item {
-        font-size: 12px;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .icon {
         display: none;
     }
 
+
+    .skill-menu {
+        gap: 8px;
+    }
 
 
     .about-words {

@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin: 32px 0px;
   }
   
   .project-main {
@@ -37,7 +38,8 @@
     flex: 1;
     border-radius: 4px;
     padding: 0px;
-    border: 2px solid black;
+    border: 2px solid;
+    border-image: linear-gradient(45deg,red,blue) 10;
     box-sizing: border-box;
     overflow: hidden;
     background: linear-gradient(to right, #5505B9, #6E07F3);
@@ -101,7 +103,17 @@
     font-weight:500;
   }
 
-  
+  .p-link:hover{
+    color: red;
+  }
+
+  .skills h1{
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'league', sans-serif;
+    color: black;
+  }
 
   @media screen and (max-width:768px) {
     .project-container{

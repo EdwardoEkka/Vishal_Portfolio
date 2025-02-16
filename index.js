@@ -25,7 +25,7 @@ const other_skills = [{ id: 1, name: "Git", path: "./skills/Git.png" },
 ];
 
 const FrontendskillContainer = document.querySelector(".frontend-container");
-FrontendskillContainer.style.display = "grid";
+FrontendskillContainer.style.display = "flex";
 frontend_skills.map((skill) => {
   const skillDiv = document.createElement("div");
   skillDiv.classList.add("skill-card-item");
@@ -80,7 +80,7 @@ const Others = document.getElementById("others");
 function RenderSkill(k) {
   switch (k) {
     case "f":
-      FrontendskillContainer.style.display = "grid";
+      FrontendskillContainer.style.display = "flex";
       BackendskillContainer.style.display = "none";
       OtherskillContainer.style.display = "none";
       Frontend.classList='selected';
@@ -89,7 +89,7 @@ function RenderSkill(k) {
       break;
     case "b":
       FrontendskillContainer.style.display = "none";
-      BackendskillContainer.style.display = "grid";
+      BackendskillContainer.style.display = "flex";
       OtherskillContainer.style.display = "none";
       Frontend.classList='none';
       Backend.classList='selected';
@@ -98,7 +98,7 @@ function RenderSkill(k) {
     case "o":
       FrontendskillContainer.style.display = "none";
       BackendskillContainer.style.display = "none";
-      OtherskillContainer.style.display = "grid";
+      OtherskillContainer.style.display = "flex";
       Frontend.classList='none';
       Backend.classList='none';
       Others.classList='selected';
