@@ -31,7 +31,7 @@
 
 .contact-form {
     position: relative;
-    background-color: aquamarine;
+    background: linear-gradient(to right, aquamarine, teal);
     border-radius: 12px;
     margin: 16px;
     display: grid;
