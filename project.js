@@ -1,8 +1,8 @@
 const projects = [
     {
       id: 1,
-      name: "Ecommerce",
-      link: "https://edwardoekka.github.io/Ecommerce_Ui/index.html",
+      name: "Fit Ecommerce",
+      link: "https://v-fit-45jw-theta.vercel.app/",
       image:
         "https://www.newgenapps.com/hubfs/Imported_Blog_Media/eCommerce-Website-Components-photo.jpg",
       bg: "#F96167",
@@ -24,12 +24,12 @@ const projects = [
     {
       id: 3,
       name: "Folder Tree",
-      link: "https://wardogram.vercel.app/",
+      link: "https://v-book-ui.vercel.app/",
       image: "/folder.jpg",
       tools: ["NextJS","MaterialUI","NodeJS","Postgres","Prisma"],
       bg: "#97BC62",
       description:
-        "A dynamic social media platform enabling users to connect, share updates, and interact with a vibrant community.",
+        "Users can create unlimited nested folders to organize and store text files efficiently, enabling a structured and seamless file management experience.",
     },
   ];
   

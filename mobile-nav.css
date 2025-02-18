@@ -17,6 +17,12 @@
     transform: translateX(0);
 }
 
+
+.butt-res-con a{
+    text-decoration: none;
+    color: inherit;
+} 
+
 .nav-header {
     display: flex;
     justify-content: flex-end;
@@ -47,10 +53,5 @@
     font-weight: 500;
     color: white;
     border-radius: 8px;
-    transition: background 0.3s, transform 0.2s;
 }
 
-.nav-list li:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateX(5px);
-}

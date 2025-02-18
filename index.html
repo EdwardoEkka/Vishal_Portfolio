@@ -8,205 +8,233 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./project.css">
     <link rel="stylesheet" href="./mobile-nav.css">
+    <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-    <div class="circle">
+    <div class="contact">
     </div>
+        <div class="main-contact">
+            <div class="contact-form">
+                <div class="left-content">
+                    <img src="./touch.svg" alt="get-touch"/>
+                </div>
+                <div class="right-content">
+                    <img src="./close.svg" alt="close-button" class="close-btn-contact" />
+                    <h1>Let's Get In Touch</h1>
+                    <form class="contact-form-main">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                
+        </div>
+    </div>
+    <div class="circle"></div>
     <div class="mobile-nav">
         <div class="nav-header">
-            <img src="./close.svg" alt="close-button" class="close-btn"/>
+            <img src="./close.svg" alt="close-button" class="close-btn" />
         </div>
         <ul class="nav-list">
-            <li class="about-link">About</li>
-            <li class="skill-link">Skills</li>
-            <li class="project-link">Projects</li>
-            <li class="contact-link">Contact</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
         </ul>
     </div>
     <div class="main-body">
-  
-            <section class="nav">
-                <div class="nav-main">
-                    <nav class="navbar">
-                        <img src="./icon.png" alt="name" class="name-icon"/>
-                        <div class="sections">
-                            <ul>
-                                <li class="about-link">About</li>
-                                <li class="skill-link">Skills</li>
-                                <li class="project-link">Projects</li>
-                                <li class="contact-link">Contact</li>
-                            </ul>
-                        </div>
-                        <img src="./ham.svg" alt="ham" class="hamburger-icon"/>
-                    </nav>
-                </div>
-            </section>
-            <section class="intro">
-                <div class="intro-main">
-                    <section class="introduction">
-                        <div class="intro-flex">
-                            <div class="hero-line">
-                                <div class="content">
-                                    <p class="greet">Hey This is!</p>
-                                    <p class="my-name">Vishal Ekka</p>
-                                    <p class="full-stack">Fullstack Developer.</p>
-                                    <p class="coder">
-                                        < CODER />
-                                    </p>
-                                    <div class="res-con">
-                                        <button class="butt-res-con">
-                                            CONTACT ME  <i class="fa-solid fa-envelope"></i>
-                                        </button>
-                                        <button class="butt-res-con">
-                                            GET RESUME  <i class="fa-solid fa-file"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="my-profile-pic">
-                                <img src="" alt="my-pic" class="my-profile" />
-                            </div> -->
-                        </div>
-                    </section>
-                </div>
-            </section>
-         
-   
-        </div>
-        <section class="about">
-            <div class="about-view" id="about-view"></div>
-            <div class="about-main">
-                <!-- <h1>About</h1> -->
-                <div class="v-pic">
-                    <img src="./my-photo.jpeg" alt="pic" class="my-pic"/>
-                </div>
-                <div class="about-data">
-                    <!-- <div class="line"></div> -->
-                    <div class="about-words">
-                        I am a Computer Science and Engineering undergraduate student with a strong foundation in
-                        full-stack development. My passion for both front-end and back-end technologies drives me to
-                        create seamless, responsive, and efficient web applications. With technical expertise and a keen
-                        interest in exploring new tools and frameworks, I am equipped to tackle complex projects and
-                        deliver innovative solutions in the ever-evolving world of software development.
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="skills">
-            <div class="skills-con">
-                <div class="skill-title">
-                    <h1>Skills</h1>
-                </div>
-                
-                <div class="skills-main">
-                    <div class="skill-set">
-                        <div class="skill-menu">
-                            <p id="frontend">Frontend</p>
-                            <p id="backend">Backend</p>
-                            <p id="others">Others</p>
-                        </div>
-                    </div>
-                    <div class="frontend-container"></div>
-                    <div class="backend-container"></div>
-                    <div class="others-container"></div>
-                </div>
-            </div>
-        </section>
-        <section class="timeline">
-            <div class="timeline-main">
-                <div class="timelines">
-                    <h1>Work Experience</h1>
-                    <div class="timeline-1">
-                        <div class="inner-timeline-1">
-                            <div class="time-img">
-                                <div class="months time">
-                                    <h2 class="company-desc-up">TRIPOWA | Frontend Developer</h2>
-                                    <p>Sep–Nov '24</p>
-                                </div>
-                                <img src="./tripowa.png" alt="tripowa-logo"/>
-                            </div>
-                            <div class="time-desc">
-                                <h2 class="company-desc">TRIPOWA | Frontend Developer</h2>
-                                <ul>
-                                    <li>Developed dynamic and responsive UI components using Next.js and Tailwind CSS.</li>
-                                    <li>Optimized state management and data flow with Redux Toolkit for better performance.</li>
-                                    <li>Implemented smooth animations and interactive UI effects using Framer Motion.</li>
-                                    <li>Built reusable and scalable component structures for maintainable code.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="project">
-            <div class="project-view" id="project-view"></div>
-            <div class="project-main">
-                <h1>Projects</h1>
-                <div class="project-container">
-                </div>
-            </div>
-        </section>
-        <section class="contact-me">
-            <div class="start-project">
-                <div class="start-project-main">
-                    <h3>Start a project</h3>
-                    <p>Interested in working together.</p>
-                    <button>Let's Connect</button>
-                </div>
-            </div>
-            <div class="contact-me-main">
-                <div class="contact-info">
-                    <div class="testimony">
-                        <h3>Testimony</h3>
-                        <p>"This college has changed my life for the better. The faculty is amazing!"</p>
-                    </div>
-                    <div class="location">
-                        <h3>Location</h3>
-                        <p>VSSUT, Burla, Sambalpur, Odisha, 768018</p>
-                    </div>
-                    <div class="imp-links">
-                        <h3>Links</h3>
-                        <ul>
 
-                            <li><a href="#about-view">About</a></li>
-                            <li><a href="#project-view">Projects</a></li>
-                            <li><a href="#contact-view">Contact</a></li>
-
+        <section class="nav">
+            <div class="nav-main">
+                <nav class="navbar">
+                    <img src="./ve.jpg" alt="name" class="name-icon" />
+                    <div class="sections">
+                        <ul class="nav-list-main">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#project">Projects</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#skills">Skills</a></li>
                         </ul>
                     </div>
+                    <img src="./ham.svg" alt="ham" class="hamburger-icon" />
+                </nav>
+            </div>
+        </section>
+        <section class="intro">
+            <div class="intro-main">
+                <section class="introduction">
+                    <div class="intro-flex">
+                        <div class="hero-line">
+                            <div class="content">
+                                <p class="greet">Hey This is!</p>
+                                <p class="my-name">Vishal Ekka</p>
+                                <p class="full-stack">Fullstack Developer.</p>
+                                <p class="coder">
+                                    < CODER />
+                                </p>
+                                <div class="res-con">
+                                    <button class="butt-res-con">
+                                        <a href="#contact">CONTACT ME <i class="fa-solid fa-envelope"></i></a>
+                                    </button>
+                                    <button class="butt-res-con">
+                                        <a href="./v-resume.pdf" download="v-Resume.pdf">GET RESUME <i class="fa-solid fa-file"></i></a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="my-profile-pic">
+                                <img src="" alt="my-pic" class="my-profile" />
+                            </div> -->
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+    </div>
+    <section class="about" id="about">
+        <div class="about-main">
+            <!-- <h1>About</h1> -->
+            <div class="v-pic">
+                <img src="./my-photo.jpeg" alt="pic" class="my-pic" />
+            </div>
+            <div class="about-data">
+                <!-- <div class="line"></div> -->
+                <div class="about-words">
+                    I am a Computer Science and Engineering undergraduate student with a strong foundation in
+                    full-stack development. My passion for both front-end and back-end technologies drives me to
+                    create seamless, responsive, and efficient web applications. With technical expertise and a keen
+                    interest in exploring new tools and frameworks, I am equipped to tackle complex projects and
+                    deliver innovative solutions in the ever-evolving world of software development.
                 </div>
-                <div class="p-line"></div>
-                <div class="end-content">
-                    <div class="social-media">
-                        <div class="c-icons">
-                            <a href="https://wa.me/9861342559" target="_blank"><img
-                                    src="https://cdn-icons-png.flaticon.com/128/1384/1384023.png" alt="w" width="20"
-                                    height="20" /></a>
-                        </div>
-                        <div class="c-icons">
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="skills-con">
+            <div class="skill-title">
+                <h1>Skills</h1>
+            </div>
 
-                            <a href="https://www.instagram.com/_vishal_ekka/" target="_blank"><img
-                                    src="https://cdn-icons-png.flaticon.com/128/1400/1400829.png" alt="i" width="20"
-                                    height="20" /></a>
+            <div class="skills-main">
+                <div class="skill-set">
+                    <div class="skill-menu">
+                        <p id="frontend">Frontend</p>
+                        <p id="backend">Backend</p>
+                        <p id="others">Others</p>
+                    </div>
+                </div>
+                <div class="frontend-container"></div>
+                <div class="backend-container"></div>
+                <div class="others-container"></div>
+            </div>
+        </div>
+    </section>
+    <section class="timeline" id="experience">
+        <div class="timeline-main">
+            <div class="timelines">
+                <h1>Work Experience</h1>
+                <div class="timeline-1">
+                    <div class="inner-timeline-1">
+                        <div class="time-img">
+                            <div class="months time">
+                                <h2 class="company-desc-up">TRIPOWA | Frontend Developer</h2>
+                                <p>Sep–Nov '24</p>
+                            </div>
+                            <img src="./tripowa.png" alt="tripowa-logo" />
                         </div>
-                        <div class="c-icons">
-
-                            <a href="https://www.linkedin.com/in/vishal-ekka-8a4a2a1b4/" target="_blank"><img
-                                    src="https://cdn-icons-png.flaticon.com/128/3536/3536569.png" alt="l" width="20"
-                                    height="20" /></a>
+                        <div class="time-desc">
+                            <h2 class="company-desc">TRIPOWA | Frontend Developer</h2>
+                            <ul>
+                                <li>Developed dynamic and responsive UI components using Next.js and Tailwind CSS.</li>
+                                <li>Optimized state management and data flow with Redux Toolkit for better performance.
+                                </li>
+                                <li>Implemented smooth animations and interactive UI effects using Framer Motion.</li>
+                                <li>Built reusable and scalable component structures for maintainable code.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="contact-view" id="contact-view"></div>
-        </section>
+        </div>
+    </section>
+    <section class="project">
+        <div class="project" id="project"></div>
+        <div class="project-main">
+            <h1>Projects</h1>
+            <div class="project-container">
+            </div>
+        </div>
+    </section>
+    <section class="contact-me">
+        <div class="start-project">
+            <div class="start-project-main">
+                <h3>Start a project</h3>
+                <p>Interested in working together.</p>
+                <button class="cntc-btn">Let's Connect</button>
+            </div>
+        </div>
+        <div class="contact-me-main" id="contact">
+            <div class="contact-info">
+                <div class="testimony">
+                    <h3>Testimony</h3>
+                    <p>"Coding is my passion and problem-solving is my craft. I build, optimize, and innovate to create
+                        seamless digital experiences"</p>
+                </div>
+                <div class="location">
+                    <h3>Location</h3>
+                    <p>VSSUT, Burla, Sambalpur, Odisha, 768018</p>
+                </div>
+                <div class="imp-links">
+                    <h3>Links</h3>
+                    <ul>
+
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="p-line"></div>
+            <div class="end-content">
+                <div class="social-media">
+                    <div class="c-icons">
+                        <a href="https://wa.me/9861342559" target="_blank"><img
+                                src="https://cdn-icons-png.flaticon.com/128/1384/1384023.png" alt="w" width="20"
+                                height="20" /></a>
+                    </div>
+                    <div class="c-icons">
+
+                        <a href="https://www.instagram.com/_vishal_ekka/" target="_blank"><img
+                                src="https://cdn-icons-png.flaticon.com/128/1400/1400829.png" alt="i" width="20"
+                                height="20" /></a>
+                    </div>
+                    <div class="c-icons">
+
+                        <a href="https://www.linkedin.com/in/vishal-ekka-8a4a2a1b4/" target="_blank"><img
+                                src="https://cdn-icons-png.flaticon.com/128/3536/3536569.png" alt="l" width="20"
+                                height="20" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     </div>
 
     <script src="./index.js"></script>
+    <script src="./contact.js"></script>
     <script src="./project.js"></script>
     <script src="./mobile-nav.js"></script>
     <script src="./particles.js"></script>

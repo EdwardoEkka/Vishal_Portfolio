@@ -4,7 +4,15 @@ const frontend_skills = [
   { id: 3, name: "MUI", path: "./skills/Material UI.png" },
   { id: 4, name: "Tailwind", path: "./skills/Tailwind CSS.png" },
   { id: 5, name: "Bootstrap", path: "./skills/Bootstrap.png" },
-  { id: 6, name: "Bootstrap", path: "./skills/Bootstrap.png" },
+  { id: 6, name: "HTML5", path: "./skills/Html5.png" },
+  { id: 7, name: "CSS3", path: "./skills/Css3.png" },
+  { id: 8, name: "Javascript", path: "./skills/JavaScript.png" },
+  { id: 9, name: "Redux", path: "./skills/Redux.png" },
+  { id: 10, name: "ESLint", path: "./skills/ESLint.png" },
+  { id: 11, name: "NPM", path: "./skills/NPM.png" },
+  { id: 12, name: "Vite", path: "./skills/Vite.js.png" },
+  { id: 13, name: "Yarn", path: "./skills/Yarn.png" },
+  { id: 14, name: "Typescript", path: "./skills/TypeScript.png" },
 ];
 
 const backend_skills = [
@@ -13,15 +21,18 @@ const backend_skills = [
   { id: 3, name: "Socket", path: "./skills/Socket.io.png" },
   { id: 4, name: "MongoDB", path: "./skills/MongoDB.png" },
   { id: 5, name: "MySQL", path: "./skills/MySQL.png" },
-  { id: 6, name: "MySQL", path: "./skills/MySQL.png" },
+  { id: 6, name: "PostgreSQL", path: "./skills/PostgresSQL.png" },
+  { id: 7, name: "JSON", path: "./skills/Json.png" },
+  { id: 8, name: "Nodemon", path: "./skills/Nodemon.png" },
 ];
 
 const other_skills = [{ id: 1, name: "Git", path: "./skills/Git.png" },
     { id: 2, name: "VS Code", path: "./skills/VS_Code.png" },
     { id: 3, name: "Postman", path: "./skills/Postman.png" },
-    { id: 4, name: "Postman", path: "./skills/Postman.png" },
-    { id: 5, name: "Postman", path: "./skills/Postman.png" },
-    { id: 6, name: "Postman", path: "./skills/Postman.png" },
+    { id: 4, name: "Docker", path: "./skills/Docker.png" },
+    { id: 5, name: "Firebase", path: "./skills/Firebase.png" },
+    { id: 6, name: "Jira", path: "./skills/Jira.png" },
+    { id: 7, name: "Stack Overflow", path: "./skills/Stack Overflow.png" },
 ];
 
 const FrontendskillContainer = document.querySelector(".frontend-container");
@@ -120,33 +131,3 @@ Others.addEventListener("click", () => {
   RenderSkill("o");
 });
 
-
-function updateImageSource() {
-  const picture = document.querySelector(".my-profile");
-  if (window.innerWidth < 600) {
-    picture.src = "my_half_pic.jpeg";
-  } else {
-    picture.src = "mypic.jpeg";
-  }
-}
-
-updateImageSource();
-
-window.addEventListener("resize", updateImageSource);
-
-const aboutLink = document.querySelector('.about-link');
-const projectLink = document.querySelector('.project-link');
-const contactLink = document.querySelector('.contact-link');
-
-const aboutView = document.querySelector('.about-view');
-const projectView = document.querySelector('.project-view');
-const contactView = document.querySelector('.contact-view');
-
-function scrollToView(view) {
-  view.scrollIntoView({ behavior: 'smooth' });
-}
-
-
-aboutLink.addEventListener('click', () => scrollToView(aboutView));
-projectLink.addEventListener('click', () => scrollToView(projectView));
-contactLink.addEventListener('click', () => scrollToView(contactView));
